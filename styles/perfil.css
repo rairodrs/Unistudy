@@ -1,0 +1,125 @@
+body {
+    display: grid;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 300px;
+    margin-top:-240;
+}
+h1, h2 {
+    color: #333;
+}
+
+.barra-progresso {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.progresso {
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    transition: width 0.5s; 
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.conteudoModificado{
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    /*width: 150px;*/
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.btnAlteracao {
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #4070f4;
+    font-size: 13px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.btnAlteracao-second {
+    background-color: #4070f4;
+    border: 1px solid #4070f4;
+    transition: background-color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnAlteracao:hover {
+    background-color: #fff;
+    border: 1px solid #4070f4;
+    color: #4070f4;
+}
+.btn-second {
+    background-color: #4070f4;
+    border: 1px solid #4070f4;
+    transition: background-color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-second:hover {
+    background-color: #fff;
+    border: 1px solid #4070f4;
+    color: #4070f4;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #e0e0e0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+.label-input {
+    display: flex;
+    align-items: center;
+}
+
+.icon-modify {
+    color: #606060;
+    padding: 0 5px;
+}
+.erros{
+    color: #7f8c8d;
+    align-items: flex-start;
+    padding:6px;
+}

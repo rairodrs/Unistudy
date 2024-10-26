@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex; /* Permite o uso de flexbox */
+}
+.content {
+    position: relative; /* Mantenha a posição relativa */
+    height: 100vh;  
+    left: 295px; /* Largura inicial da sidebar */
+    width: calc(100% - 295px); /* Largura inicial do conteúdo */
+    transition: left var(--tran-05); /* Transição suave ao mover */
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    flex: 1; /* Permite que a container ocupe o restante do espaço */
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative; /* Para o posicionamento do hover */
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 120px; /* Tamanho aumentado da imagem */
+    height: 120px; /* Tamanho aumentado da imagem */
+    border-radius: 50%; /* Imagem redonda */
+    margin: 10px 0; /* Espaço acima e abaixo da imagem */
+}
+
+.card-title {
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+.card-subtitle {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.card-description {
+    font-size: 0.9em;
+
+}
+
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #6e93f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+    margin-top: 5px; /* Reduz a distância acima do botão */
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

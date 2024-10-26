@@ -1,0 +1,105 @@
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.close{
+    text-align: left;
+    padding: 322px;
+    text-decoration: none;
+    color: #7f8c8d;
+    font-size: 25px;
+    
+}
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.star-rating input {
+    display: none; /* Oculta os radio buttons */
+}
+
+.star-rating label {
+    font-size: 40px;
+    color: #ccc; /* Cor padrão das estrelas */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star-rating input:checked ~ label {
+    color: #FF8C00; /* Laranja quando selecionada */
+}
+
+/* Estrelas que estão sendo passadas com o mouse */
+.star:hover{
+    color: #6A5ACD; /* Roxo ao passar o mouse */
+}
+
+/* Para garantir que apenas a estrela selecionada e as anteriores fiquem laranja */
+.star-rating input:checked + label {
+    color: #FF8C00; /* Laranja para a estrela selecionada */
+}
+
+.star-rating input:checked ~ label {
+    color: #FF8C00; /* Laranja para estrelas à esquerda */
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #3498db; /* Cor do botão */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Cor do botão ao passar o mouse */
+}
+
+.erros {
+    margin-top: 10px;
+    color: #e74c3c; /* Cor para mensagens de erro */
+    text-align: left;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: #7f8c8d;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3498db;
+}
